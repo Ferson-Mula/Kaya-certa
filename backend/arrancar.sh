@@ -46,16 +46,19 @@ for tentativa in range(30):
 echo "A aplicar migrações..."
 python manage.py migrate --noinput
 
-echo "A carregar dados de demonstração..."
-if [ "$RECARREGAR_DEMO" = "1" ]; then
-  echo "A recarregar base de dados com as fotografias reais (--limpar)..."
-  python manage.py carregar_demo --limpar
-else
-  python manage.py carregar_demo
-fi
-
 echo "A preparar ficheiros estáticos..."
 python manage.py collectstatic --noinput -v 0
+
+echo "A carregar dados de demonstração em segundo plano..."
+(
+  if [ "$RECARREGAR_DEMO" = "1" ]; then
+    echo "A recarregar base de dados com as fotografias reais (--limpar)..."
+    python manage.py carregar_demo --limpar
+  else
+    python manage.py carregar_demo
+  fi
+  echo "Dados de demonstração carregados com sucesso!"
+) &
 
 PORT="${PORT:-8000}"
 WORKERS="${GUNICORN_WORKERS:-2}"
