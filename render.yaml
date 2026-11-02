@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: casa-certa-backend
+    runtime: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    plan: free
+    healthCheckPath: /api/anuncios/
+    envVars:
+      - key: DJANGO_DEBUG
+        value: "0"
+      - key: DJANGO_SECRET_KEY
+        generateValue: true
+      - key: DJANGO_ALLOWED_HOSTS
+        value: "*"
+      - key: CSRF_TRUSTED_ORIGINS
+        value: "https://*.onrender.com,https://*.vercel.app"
+      - key: DATABASE_URL
+        fromDatabase:
+          name: casa-certa-db
+          property: connectionString
+
+databases:
+  - name: casa-certa-db
+    plan: free
+    databaseName: imoveis
+    user: imoveis
