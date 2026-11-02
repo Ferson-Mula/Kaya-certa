@@ -11,7 +11,9 @@ export default function Campo({ rotulo, erro, ajuda, children, className = "" })
   return (
     <div className={`campo ${className}`}>
       <label htmlFor={id}>{rotulo}</label>
-      {children({ id, "aria-invalid": erro ? "true" : undefined, "aria-describedby": descricao })}
+      {typeof children === "function"
+        ? children({ id, "aria-invalid": erro ? "true" : undefined, "aria-describedby": descricao })
+        : children}
       {ajuda && !erro && <span id={idAjuda} className="ajuda">{ajuda}</span>}
       {erro && (
         <span id={idErro} className="erro-campo">

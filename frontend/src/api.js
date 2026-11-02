@@ -31,7 +31,7 @@ function mensagemGeral(estado, dados) {
   return "Verifique os campos assinalados.";
 }
 
-const API_BASE = (import.meta.env.VITE_API_URL || "").replace(/\/+$/, "");
+const API_BASE = (import.meta.env.VITE_API_URL || "https://kaya-certa-backend.onrender.com").replace(/\/+$/, "");
 
 export async function pedido(caminho, { metodo = "GET", dados, parametros, formulario } = {}) {
   let url = `${API_BASE}/api${caminho}`;

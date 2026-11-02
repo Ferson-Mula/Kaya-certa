@@ -33,6 +33,6 @@ export function urlMidia(caminho) {
   ) {
     return caminho;
   }
-  const base = (import.meta.env.VITE_API_URL || "").replace(/\/+$/, "");
+  const base = (import.meta.env.VITE_API_URL || "https://kaya-certa-backend.onrender.com").replace(/\/+$/, "");
   return `${base}${caminho}`;
 }
