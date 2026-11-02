@@ -63,6 +63,9 @@ export async function pedido(caminho, { metodo = "GET", dados, parametros, formu
   if (resposta.status === 204) return null;
   const tipo = resposta.headers.get("Content-Type") || "";
   const conteudo = tipo.includes("application/json") ? await resposta.json() : await resposta.text();
+  if (typeof conteudo === "string" && (conteudo.trim().startsWith("<!doctype") || conteudo.trim().startsWith("<html"))) {
+    throw new ErroApi(0, { detail: "Sem ligação ao servidor ou rota não encontrada na API." });
+  }
   if (!resposta.ok) throw new ErroApi(resposta.status, conteudo);
   return conteudo;
 }

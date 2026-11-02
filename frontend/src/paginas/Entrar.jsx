@@ -1,6 +1,6 @@
 // UC15 Iniciar sessão
-import { useState } from "react";
-import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Campo from "../componentes/Campo";
 import { Rodar } from "../componentes/Estados";
 import Icone from "../componentes/Icone";
@@ -23,7 +23,11 @@ export default function Entrar() {
   const [erroGeral, setErroGeral] = useState(null);
   const [ocupado, setOcupado] = useState(false);
 
-  if (utilizador) return <Navigate to={inicioDoPerfil(utilizador)} replace />;
+  useEffect(() => {
+    if (utilizador) {
+      navegar(local.state?.voltar || inicioDoPerfil(utilizador), { replace: true });
+    }
+  }, [utilizador, navegar, local.state]);
 
   const mudar = (e) => { setV({ ...v, [e.target.name]: e.target.value }); setErros({ ...erros, [e.target.name]: null }); };
 
@@ -38,8 +42,7 @@ export default function Entrar() {
     setOcupado(true);
     setErroGeral(null);
     try {
-      const u = await entrar(v.email.trim(), v.palavra_passe);
-      navegar(local.state?.voltar || inicioDoPerfil(u), { replace: true });
+      await entrar(v.email.trim(), v.palavra_passe);
     } catch (erro) {
       setErroGeral(erro.message);
     } finally {

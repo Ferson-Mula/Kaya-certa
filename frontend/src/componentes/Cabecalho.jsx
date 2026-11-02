@@ -64,16 +64,17 @@ function Notificacoes() {
 function MenuConta({ utilizador, sair }) {
   const [aberto, setAberto] = useState(false);
   const ref = useFecharFora(aberto, () => setAberto(false));
+  const primeiroNome = (utilizador?.nome || "").split(" ")[0] || "Conta";
   return (
     <div className="suspenso" ref={ref}>
       <button className="item-menu" onClick={() => setAberto(!aberto)} aria-expanded={aberto} aria-haspopup="menu">
-        <Icone nome="utilizador" /> {utilizador.nome.split(" ")[0]}
+        <Icone nome="utilizador" /> {primeiroNome}
       </button>
       {aberto && (
         <div className="painel-suspenso" role="menu">
           <div className="cabeca">
-            <strong>{utilizador.nome}</strong>
-            <div className="subtil pequeno">{utilizador.perfil_nome}</div>
+            <strong>{utilizador?.nome || "Utilizador"}</strong>
+            <div className="subtil pequeno">{utilizador?.perfil_nome || ""}</div>
           </div>
           <Link role="menuitem" to="/perfil" onClick={() => setAberto(false)}>A minha conta</Link>
           <button role="menuitem" onClick={sair}>Terminar sessão</button>
@@ -139,7 +140,7 @@ export default function Cabecalho() {
                   {g.itens.map(ligacao)}
                 </Fragment>
               ))
-              : MENU[utilizador?.perfil || "VISITANTE"].map(ligacao)}
+              : (MENU[utilizador?.perfil] || MENU.VISITANTE).map(ligacao)}
           </div>
           <div className="direita">
             {utilizador ? (

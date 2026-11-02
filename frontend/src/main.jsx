@@ -7,17 +7,20 @@ import "@fontsource/inter/600.css";
 import "@fontsource/inter/700.css";
 import "./estilos.css";
 import App from "./App";
+import LimiteErro from "./componentes/LimiteErro";
 import { FornecedorAvisos } from "./contexto/Avisos";
 import { FornecedorSessao } from "./contexto/Sessao";
 
 createRoot(document.getElementById("raiz")).render(
   <StrictMode>
-    <BrowserRouter>
-      <FornecedorSessao>
-        <FornecedorAvisos>
-          <App />
-        </FornecedorAvisos>
-      </FornecedorSessao>
-    </BrowserRouter>
+    <LimiteErro>
+      <BrowserRouter>
+        <FornecedorSessao>
+          <FornecedorAvisos>
+            <App />
+          </FornecedorAvisos>
+        </FornecedorSessao>
+      </BrowserRouter>
+    </LimiteErro>
   </StrictMode>
 );
