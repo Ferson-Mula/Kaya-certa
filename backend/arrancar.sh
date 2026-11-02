@@ -47,7 +47,12 @@ echo "A aplicar migrações..."
 python manage.py migrate --noinput
 
 echo "A carregar dados de demonstração..."
-python manage.py carregar_demo
+if [ "$RECARREGAR_DEMO" = "1" ]; then
+  echo "A recarregar base de dados com as fotografias reais (--limpar)..."
+  python manage.py carregar_demo --limpar
+else
+  python manage.py carregar_demo
+fi
 
 echo "A preparar ficheiros estáticos..."
 python manage.py collectstatic --noinput -v 0

@@ -1,0 +1,22 @@
+# Créditos das fotografias
+
+Fotografias de edifícios reais, do Wikimedia Commons, usadas nos anúncios de demonstração. Os anúncios, preços e anunciantes são fictícios.
+
+| Ficheiro | Título no Commons | Autor | Licença | Origem |
+|---|---|---|---|---|
+| apartamento_01.jpg | Residential buildings in Avenida Tomás Nduda (4106224421).jpg | lucianf from Bucharest, Romania | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) | [página](https://commons.wikimedia.org/wiki/File:Residential_buildings_in_Avenida_Tom%C3%A1s_Nduda_(4106224421).jpg) |
+| apartamento_02.jpg | Avenida Julius Nyerere entre Sommerschield e Xiquelene 2.jpg | Kitabulu | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) | [página](https://commons.wikimedia.org/wiki/File:Avenida_Julius_Nyerere_entre_Sommerschield_e_Xiquelene_2.jpg) |
+| apartamento_03.jpg | Igreja de Santo António da Polana.jpg | Claus Wonnemann | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [página](https://commons.wikimedia.org/wiki/File:Igreja_de_Santo_Ant%C3%B3nio_da_Polana.jpg) |
+| apartamento_04.jpg | Igreja do Santo António de Polana (23803550736).jpg | Cornelius Kibelka from Berlin, Germany | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) | [página](https://commons.wikimedia.org/wiki/File:Igreja_do_Santo_Ant%C3%B3nio_de_Polana_(23803550736).jpg) |
+| moradia_01.jpg | Destroyed houses in Beira, Mozambique (9409).jpg | Rein Skullerud/WFP | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) | [página](https://commons.wikimedia.org/wiki/File:Destroyed_houses_in_Beira,_Mozambique_(9409).jpg) |
+| moradia_02.jpg | Flooding in Mozambique (MODIS).jpg | MODIS Land Rapid Response Team, NASA GSFC | Public domain | [página](https://commons.wikimedia.org/wiki/File:Flooding_in_Mozambique_(MODIS).jpg) |
+| moradia_03.jpg | TT CMZ-AF-GT E 2-1 5 4 - Vista de moradia junto à Praia Nova da Beira.jpg | Companhia de Moçambique | Public domain | [página](https://commons.wikimedia.org/wiki/File:TT_CMZ-AF-GT_E_2-1_5_4_-_Vista_de_moradia_junto_%C3%A0_Praia_Nova_da_Beira.jpg) |
+| moradia_04.jpg | TT CMZ-AF-GT E 2-1 5 6 - Edificio para duas moradias junto à Praia Nova. Beira.jpg | Companhia de Moçambique | Public domain | [página](https://commons.wikimedia.org/wiki/File:TT_CMZ-AF-GT_E_2-1_5_6_-_Edificio_para_duas_moradias_junto_%C3%A0_Praia_Nova._Beira.jpg) |
+| escritorio_01.jpg | Correios de Moçambique (12945980005).jpg | Rick McCharles from Calgary, Canada | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) | [página](https://commons.wikimedia.org/wiki/File:Correios_de_Mo%C3%A7ambique_(12945980005).jpg) |
+| escritorio_02.jpg | Edificio Prometheus Panoramio.jpg | Tadpolefarm from panoramio.com | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) | [página](https://commons.wikimedia.org/wiki/File:Edificio_Prometheus_Panoramio.jpg) |
+| escritorio_03.jpg | Edifício dos Correios.jpg | F Mira from Lisbon, Portugal | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) | [página](https://commons.wikimedia.org/wiki/File:Edif%C3%ADcio_dos_Correios.jpg) |
+| escritorio_04.jpg | Gabinete do Primeiro-Ministro.jpg | Salazar Sérgio | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [página](https://commons.wikimedia.org/wiki/File:Gabinete_do_Primeiro-Ministro.jpg) |
+| paisagem_01.jpg | Costa do Sol – estruturas de protecção costeira na Avenida Marginal 01.jpg | Salazar Sérgio | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [página](https://commons.wikimedia.org/wiki/File:Costa_do_Sol_%E2%80%93_estruturas_de_protec%C3%A7%C3%A3o_costeira_na_Avenida_Marginal_01.jpg) |
+| paisagem_02.jpg | Costa do Sol – estruturas de protecção costeira na Avenida Marginal 02.jpg | Salazar Sérgio | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [página](https://commons.wikimedia.org/wiki/File:Costa_do_Sol_%E2%80%93_estruturas_de_protec%C3%A7%C3%A3o_costeira_na_Avenida_Marginal_02.jpg) |
+| paisagem_03.jpg | Africa Watsan 5 (10665817643).jpg | Kate Holt/AusAID | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) | [página](https://commons.wikimedia.org/wiki/File:Africa_Watsan_5_(10665817643).jpg) |
+| paisagem_04.jpg | Africa Watsan 4 (10665623274).jpg | Department of Foreign Affairs and Trade | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) | [página](https://commons.wikimedia.org/wiki/File:Africa_Watsan_4_(10665623274).jpg) |

@@ -18,6 +18,7 @@ import argparse
 import html
 import json
 import re
+import ssl
 import sys
 import time
 import urllib.parse
@@ -28,6 +29,7 @@ PASTA = Path(__file__).resolve().parent
 API = "https://commons.wikimedia.org/w/api.php"
 # A Wikimedia exige que o programa se identifique
 AGENTE = "CasaCertaLES/1.0 (projecto academico UJC; fotografias de demonstracao)"
+SSL_CTX = ssl._create_unverified_context()
 
 # categoria de imóvel -> pesquisas no Commons (em inglês e português)
 PESQUISAS = {
@@ -48,13 +50,13 @@ EXCLUIR = re.compile(r"map|mapa|logo|flag|bandeira|plan|diagram|coat of arms|sta
 def pedir_json(parametros):
     url = API + "?" + urllib.parse.urlencode(parametros)
     pedido = urllib.request.Request(url, headers={"User-Agent": AGENTE})
-    with urllib.request.urlopen(pedido, timeout=40) as resposta:
+    with urllib.request.urlopen(pedido, timeout=40, context=SSL_CTX) as resposta:
         return json.load(resposta)
 
 
 def descarregar(url, destino):
     pedido = urllib.request.Request(url, headers={"User-Agent": AGENTE})
-    with urllib.request.urlopen(pedido, timeout=90) as resposta:
+    with urllib.request.urlopen(pedido, timeout=90, context=SSL_CTX) as resposta:
         destino.write_bytes(resposta.read())
 
 
